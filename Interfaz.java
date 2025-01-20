@@ -8,6 +8,7 @@
 
 package HojaDeTrabajo1Estructuras;
 
+// la interfaz utilizada en común se detalla a continuación:
 interface Interfaz {
     // metodo para encender la licuadora
     void encender();
