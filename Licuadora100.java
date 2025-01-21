@@ -37,5 +37,20 @@ public class Licuadora100 implements Interfaz{
         }
     }
 
+    @Override
+    public int consultarVelocidad() {
+        return velocidad;
+    }
 
+    @Override
+    public boolean consultarLlenado() {
+        return lleno;
+    }
+
+    @Override
+    public void vaciar() {
+        if (lleno == true) {
+            lleno = false;
+        }
+    }
 }
