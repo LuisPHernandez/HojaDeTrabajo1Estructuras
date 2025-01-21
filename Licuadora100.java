@@ -37,16 +37,19 @@ public class Licuadora100 implements Interfaz{
         }
     }
 
+    // Se devuelve el valor actual de la velocidad
     @Override
     public int consultarVelocidad() {
         return velocidad;
     }
 
+    // Se devuelve el estado actual de la licuadora (true = lleno, false = vacío)
     @Override
     public boolean consultarLlenado() {
         return lleno;
     }
 
+    // Se vacía el contenido de la licuadora y se actualiza su estado
     @Override
     public void vaciar() {
         if (lleno == true) {
