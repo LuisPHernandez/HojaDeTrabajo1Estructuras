@@ -1,6 +1,6 @@
 package HojaDeTrabajo1Estructuras;
 
-public class Licuadora100 implements Interfaz{
+public class Licuadora100 implements Interfaz {
     private boolean encendido;
     private boolean lleno;
     private int velocidad;
@@ -12,10 +12,15 @@ public class Licuadora100 implements Interfaz{
         this.velocidad = 0;
     }
 
-    // requisito previo, tiene que estar apagada y llena
+    // Requisito previo, tiene que estar apagada y llena
     @Override
     public void encender() {
-        if (encendido == false && lleno == true) {
+        if (encendido == true) {
+            encendido = false;
+            velocidad = 0;
+        }
+
+        else if (encendido == false && lleno == true) {
             encendido = true;
             velocidad = 1; // se enciende con la velocidad 1, ya que no es posible saltarse velocidades
         }
@@ -26,7 +31,7 @@ public class Licuadora100 implements Interfaz{
         lleno = true;
     }
 
-    // requisitos previo, solo se puede aumentar la velocidad si esta encendida la licuadora y cuando llegue a 10 regrese a la velocidad 1
+    // Requisitos previo, solo se puede aumentar la velocidad si esta encendida la licuadora y cuando llegue a 10 regrese a la velocidad 1
     @Override
     public void aumentarVelocidad() {
         if(encendido == true) {
