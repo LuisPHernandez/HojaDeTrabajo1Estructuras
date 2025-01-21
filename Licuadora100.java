@@ -63,6 +63,7 @@ public class Licuadora100 implements Interfaz {
     }
 
     //getters y setters
+    
     public boolean isEncendido() {
         return encendido;
     }
