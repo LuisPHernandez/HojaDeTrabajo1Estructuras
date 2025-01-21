@@ -61,4 +61,29 @@ public class Licuadora100 implements Interfaz {
             lleno = false;
         }
     }
+
+    //getters y setters
+    public boolean isEncendido() {
+        return encendido;
+    }
+    
+    public void setEncendido(boolean encendido) {
+        this.encendido = encendido;
+    }
+    
+    public boolean isLleno() {
+        return lleno;
+    }
+    
+    public void setLleno(boolean lleno) {
+        this.lleno = lleno;
+    }
+    
+    public int getVelocidad() {
+        return velocidad;
+    }
+    
+    public void setVelocidad(int velocidad) {
+        this.velocidad = velocidad;
+    }    
 }
