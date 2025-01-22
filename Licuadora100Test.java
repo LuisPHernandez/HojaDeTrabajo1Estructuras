@@ -7,15 +7,24 @@ import org.junit.jupiter.api.Test;
 
 public class Licuadora100Test {
 
+    /**
+     *
+     */
     private Licuadora100 licuadora;
 
     // se inicializa y crea una licuadora antes de cada prueba (método)
+    /**
+     * 
+     */
     @BeforeEach
     public void TestLicuadora100() {
         licuadora = new Licuadora100();
     }
 
     // Este test será para probar su encendido
+    /**
+     * 
+     */
     @Test
     public void testParaEncendido() {
         licuadora.llenar(); // primero se llena la licuadora
@@ -25,6 +34,9 @@ public class Licuadora100Test {
     }
 
     // El segundo test es para apagar la licuadora
+    /**
+     * 
+     */
     @Test
     public void testParaApagado() {
         licuadora.llenar(); // se llena para encenderse
@@ -35,6 +47,9 @@ public class Licuadora100Test {
     }
 
     // El tercer test es para aumentar la velocidad de 1 en 1
+    /**
+     * 
+     */
     @Test
     public void testParaAumentarVelocidad() {
         licuadora.llenar(); // se llena para encenderse 
@@ -44,6 +59,9 @@ public class Licuadora100Test {
     }
 
     // El cuarto test es para disminuir la velocidad una vez llegue a 10
+    /**
+     * 
+     */
     @Test
     public void testParaReducirVelMax() {
         licuadora.llenar(); // se llena para encenderse
@@ -63,7 +81,7 @@ public class Licuadora100Test {
         assertTrue(licuadora.consultarLlenado());
     }
 
-    // 
+    // El test verifica si la licuadora se vacía al accionar la función correspondiente
     @Test
     public void testParaVaciarla() {
         licuadora.llenar(); // se llena la licuadora
