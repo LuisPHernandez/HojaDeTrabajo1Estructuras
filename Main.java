@@ -3,6 +3,9 @@ package HojaDeTrabajo1Estructuras;
 import java.util.Scanner;
 
 public class Main {
+    /**
+     * @param args
+     */
     public static void main(String []args){
         Licuadora100 licuadora = new Licuadora100();
         Scanner scan = new Scanner(System.in);

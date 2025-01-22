@@ -1,11 +1,23 @@
 package HojaDeTrabajo1Estructuras;
 
 public class Licuadora100 implements Interfaz {
+    /**
+     *
+     */
     private boolean encendido;
+    /**
+     *
+     */
     private boolean lleno;
+    /**
+     *
+     */
     private int velocidad;
     
 
+    /**
+     * 
+     */
     public Licuadora100() {
         this.encendido = false;
         this.lleno = false;
@@ -64,26 +76,44 @@ public class Licuadora100 implements Interfaz {
 
     //getters y setters
     
+    /**
+     * @return
+     */
     public boolean isEncendido() {
         return encendido;
     }
     
+    /**
+     * @param encendido
+     */
     public void setEncendido(boolean encendido) {
         this.encendido = encendido;
     }
     
+    /**
+     * @return
+     */
     public boolean isLleno() {
         return lleno;
     }
     
+    /**
+     * @param lleno
+     */
     public void setLleno(boolean lleno) {
         this.lleno = lleno;
     }
     
+    /**
+     * @return
+     */
     public int getVelocidad() {
         return velocidad;
     }
     
+    /**
+     * @param velocidad
+     */
     public void setVelocidad(int velocidad) {
         this.velocidad = velocidad;
     }    
