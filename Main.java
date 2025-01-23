@@ -21,7 +21,7 @@ public class Main {
         Scanner scan = new Scanner(System.in);
         boolean continuar = true;
         while(continuar != false){
-            System.out.println("opciones ofrecidas por la licuadora");
+            System.out.println("\nOpciones ofrecidas por la licuadora");
             System.out.println("1. Encender Licuadora (tiene que llenarse primero)");
             System.out.println("2. Llenar la licuadora");
             System.out.println("3. Aumentar/disminuir la velocidad (de 1 a 10)");
