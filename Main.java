@@ -1,9 +1,11 @@
-/**-----------------------------------------------------
+/**----------------------------------------------------------------------
 * @author Pablo Toledo
+* @author Pedro Caso
 * @author Luis Hernandez 
 * @Project Algoritmos y estructuras básicas - HDT1
-* última modificación: 21/01/2025
-* -----------------------------------------------------
+* Última modificación: 21/01/2025
+* Se realizó la prueba de intercambio con otro grupo (licuadora2.java)
+* -----------------------------------------------------------------------
 */
 
 package HojaDeTrabajo1Estructuras;
