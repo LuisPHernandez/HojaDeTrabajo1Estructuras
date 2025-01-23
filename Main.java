@@ -1,3 +1,11 @@
+/**-----------------------------------------------------
+* @author Pablo Toledo
+* @author Luis Hernandez 
+* @Project Algoritmos y estructuras básicas - HDT1
+* última modificación: 21/01/2025
+* -----------------------------------------------------
+*/
+
 package HojaDeTrabajo1Estructuras;
 
 import java.util.Scanner;
@@ -23,10 +31,9 @@ public class Main {
             int opciones = scan.nextInt();
             switch(opciones){
 
-                //Encender la licuadora
                 case 1:
                     licuadora.encender();
-                    if (licuadora.isEncendido()) {
+                    if (licuadora.getEncendido()) {
                         System.out.println("La licuadora se encendió");
                     } 
                     
@@ -35,35 +42,29 @@ public class Main {
                     }
                     break;
 
-                // Llenar la licuadora 
                 case 2:
                     licuadora.llenar();
                     System.out.println("La licuadora se llenó con éxito");
                     break;
 
-                // Aumentar/Disminuir velocidad
                 case 3:
                     licuadora.aumentarVelocidad();
                     System.out.println("La velocidad aumentó/disminuyó a: " + licuadora.consultarVelocidad());
                     break;
 
-                // Consultar la velocidad actual
                 case 4:
                     System.out.println("La velocidad actual es: " + licuadora.consultarVelocidad());
                     break;
 
-                // Verificar si esta llena o vacía
                 case 5:
                     System.out.println("Estado: " + (licuadora.consultarLlenado() ? "Llena" : "Vacía"));
                     break;
                 
-                // Vaciar licuadora 
                 case 6:
                     licuadora.vaciar();
                     System.out.println("La licuadora se vació.");
                     break;
 
-                // Salir del programa 
                 case 7:
                     continuar = false;
                     System.out.println("Saliendo...");
